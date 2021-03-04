@@ -1,6 +1,6 @@
-## **Appendix: Requirements**
+# **Appendix: Requirements**
 
-### Product Scope
+## Product Scope
 
 **Target user profile**:
 
@@ -10,7 +10,9 @@
 
 **Value proposition**: efficient tool to keep track of schedules and tasks as well as find and add student contact information easily.
 
-### User Stories
+---
+
+## User Stories
 
 ### Contacts
 Priority | As a... | I want to... | So that I can...
@@ -55,11 +57,11 @@ medium|teacher|access the guide or the commands list|eliminate the need to memor
 low|teacher|confirm crucial commands with a confirmation message|avoid entering the wrong command
 low|user adopting this products|clear all my contacts from the address book|clear dummy data easily when I use the app for testing
 
-### Use Cases
+---
 
-<br>
+## Use Cases
 
-**Use case: Delete a contact**
+### Use case: Delete a contact
 
 **MSS**
 
@@ -85,7 +87,7 @@ low|user adopting this products|clear all my contacts from the address book|clea
     
 <br>
 
-**Use case: Add a schedule**
+### Use case: Add a schedule
 
 **MSS**
 
@@ -103,7 +105,7 @@ low|user adopting this products|clear all my contacts from the address book|clea
 
 <br>
 
-**Use case: Delete a schedule**
+### Use case: Delete a schedule
 
 **MSS**
 
@@ -126,9 +128,9 @@ low|user adopting this products|clear all my contacts from the address book|clea
 
     Use case ends.
 
-<br>
+---
 
-### Non-Functional Requirements
+## Non-Functional Requirements
 
 1. Should work on any mainstream OS as long as it has Java 11 or above installed.
 2. A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
@@ -136,16 +138,18 @@ low|user adopting this products|clear all my contacts from the address book|clea
 4. The user interface should be intuitive enough for users who are not IT-savvy.
 5. The product is offered as an open source software.
 
-### Glossary
+---
 
-**JC**<br>
+## Glossary
+
+### JC
 Junior College (JC) is the post-secondary education level where students are preparing for university.
 JC is also the high-school equivalent in other countries. Hence, JC teachers may be packed with consultation
 schedules which can leverage our software.
 
-**Mainstream OS**<br>
+### Mainstream OS
 Mainstream operating systems are the current operating systems with a significant market share, namely Windows, Linux,
 Unix, and OS-X.
 
-**MSS**<br>
+### MSS
 Main Success Scenario (MSS) defines the optimal outcome of our commands, i.e. in the case where no errors occurred.
