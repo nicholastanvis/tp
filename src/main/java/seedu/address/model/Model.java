@@ -5,6 +5,7 @@ import java.util.function.Predicate;
 
 import javafx.collections.ObservableList;
 import seedu.address.commons.core.GuiSettings;
+import seedu.address.model.contact.Contact;
 import seedu.address.model.entry.Entry;
 import seedu.address.model.person.Person;
 import seedu.address.model.schedule.Schedule;
@@ -14,6 +15,9 @@ import seedu.address.model.task.Task;
  * The API of the Model component.
  */
 public interface Model {
+    /** {@code Predicate} that always evaluate to true */
+    Predicate<Entry> PREDICATE_SHOW_ALL_CONTACTS = unused -> true;
+
     /** {@code Predicate} that always evaluate to true */
     Predicate<Entry> PREDICATE_SHOW_ALL_ENTRIES = unused -> true;
 
@@ -98,6 +102,25 @@ public interface Model {
      * @throws NullPointerException if {@code predicate} is null.
      */
     void updateFilteredPersonList(Predicate<Person> predicate);
+
+    // ====== Contact ======
+
+    /**
+     * Returns true if the contact exists in the list.
+     */
+    boolean hasContact(Contact contact);
+
+    /**
+     * Deletes the given contact.
+     * The contact must exist in the list.
+     */
+    void deleteContact(Contact contact);
+
+    /**
+     * Adds the given contact.
+     * {@code contact} must not exist in the list.
+     */
+    void addContact(Contact contact);
 
     // ====== Entry ======
 
